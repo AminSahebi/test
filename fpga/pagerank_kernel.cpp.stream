@@ -1,0 +1,127 @@
+/*
+   Copyright (c) 2020-2021 Amin Sahebi, 
+   University of Siena, University of Florence.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdint.h>
+#include <ap_int.h>
+#include <ap_fixed.h>
+#include "libfpga.h"
+#include "ap_axi_sdata.h"
+
+#define DAMPING_FACTOR 0.85
+#define DWIDTH 512
+#define BUFFER_SIZE 256
+
+typedef qdma_axis<DWIDTH, 0, 0, 0> pkt;
+
+
+extern "C" { 
+	void kernel_pagerank_0(
+			const int vertices,		/** number of vertices */
+			const int partitions, 		/** number of partitions */
+			hls::stream<pkt>  &src,  	/** streaming input edges_src [BlockId][Size]*/
+			hls::stream<pkt>  &dst,  	/** streaming input edges_dst [BlockId][Size]*/
+			int *outDegrees, 		/** outdegrees [No. of. Vertices]*/
+			int *fsize,			/** size of the blocks [partitions*partitions]*/
+			hls::stream<pkt> &output 	/** output results [No. of. Vertices]*/
+			) {
+#pragma HLS INTERFACE axis port=src
+#pragma HLS INTERFACE axis port=dst
+#pragma HLS INTERFACE axis port=output
+#pragma HLS INTERFACE m_axi port = fsize offset = slave bundle = gmem
+#pragma HLS INTERFACE m_axi port = outDegrees offset = slave bundle = gmem
+
+#pragma HLS INTERFACE s_axilite port = vertices bundle = control
+#pragma HLS INTERFACE s_axilite port = partitions bundle = control
+#pragma HLS INTERFACE s_axilite port = src bundle = control
+#pragma HLS INTERFACE s_axilite port = dst bundle = control
+#pragma HLS INTERFACE s_axilite port = outDegrees bundle = control
+#pragma HLS INTERFACE s_axilite port = fsize bundle = control
+#pragma HLS INTERFACE s_axilite port = output bundle = control
+#pragma HLS INTERFACE s_axilite port = return bundle = control
+
+		uint32_t v = vertices;
+		static int p = partitions;
+		static int p2 = p*p;
+		int size[BUFFER_SIZE];
+
+		uint16_dt rank_buffer[BUFFER_SIZE]; /** Local buffer pagerank value in each iteration if any */
+		uint16_dt prev_buffer[BUFFER_SIZE]; /** Local buffer previous value to be updated in the next iteration */
+		uint16_dt src_buffer[BUFFER_SIZE]; /** Local buffer pagerank value in each iteration if any */
+		uint16_dt dst_buffer[BUFFER_SIZE]; /** Local buffer previous value to be updated in the next iteration */
+#pragma HLS ARRAY_PARTITION variable=rank_buffer complete dim=1
+#pragma HLS ARRAY_PARTITION variable=prev_buffer complete dim=1
+#pragma HLS ARRAY_PARTITION variable=src_buffer complete dim=1
+#pragma HLS ARRAY_PARTITION variable=dst_buffer complete dim=1
+
+sz_rd:	for (int i = 0; i < p2; i++) {
+#pragma HLS pipeline
+		size[i] = fsize[i];
+	}
+
+	/** start init grid algorithm and
+	 * init "rank" and "prev" memories.
+	 **/
+	float adding_constant = (1 - DAMPING_FACTOR) * 1/(float)v;
+	float one_over_n = 1.0/(float)v;
+
+	for(int i = 0; i < v; i++){
+#pragma HLS pipeline
+		prev_buffer[i] = one_over_n;
+		//DEBUG_PRINTF("[DEBUG] prev_buffer[%d] %d\n",i, prev_buffer[i]);
+	}
+	for(int i = 0; i < v; i++){
+#pragma HLS pipeline
+		rank_buffer[i] = 0.0;
+	}
+	uint16_dt tmp=0;
+	for(int i = 0; i < p2; i++){
+#pragma HLS pipeline
+
+		output[i] = tmp++;
+		//DEBUG_PRINTF("[DEBUG] prev_buffer[%d] %d\n",i, prev_buffer[i]);
+	}
+
+	//for(int i = 0; i < P; i++) {
+	//for(int j = 0; j < P; j++) {
+	//	uint32_t start = row_offsets[i] + offsets[i][j];
+	//	uint32_t stop =  (j == P - 1 ? (i == P - 1? nb_edges : row_offsets[i+1] ) : row_offsets[i] +  offsets[i][j+1] ); 
+	//	for( ; start < stop; start++) 			{
+	//	struct edge_t* e = &memblock[start]; --> reading edge blocks give us <src dest> 
+	//	     uint32_t src = e->src;
+	//	     uint32_t dst = e->dst;
+	//	     rank[dst] += (prev[src]/(float)nodes[src].nb_out_edges);  
+	//
+	//		}
+	//
+	//		}
+	//	}
+
+
+	//
+	//start iterator here and update "rank" values
+	//first calling the algorithm calculate the "rank" value here 
+	//
+	//
+	//then new rank will be calculated and update the prev values.
+	//
+	//for(uint32_t i = 0; i< NB_NODES; i++) {
+	//			rank[i] = adding_constant + DAMPING_FACTOR * rank[i];
+	//				prev[i] = rank[i];
+
+	}
+	}

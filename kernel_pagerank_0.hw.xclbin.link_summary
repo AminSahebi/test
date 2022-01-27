@@ -1,0 +1,1207 @@
+<ENTRY>
+{
+ "thisFile": "/home/u250/distributed-graph-fpga/hw_src/kernel_pagerank_0.hw.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jan 27 01:13:08 2022",
+ "timestampMillis": "1643242388391",
+ "buildStep": {
+  "cmdId": "4a702337-4e4e-44c5-bfac-bb2065428299",
+  "name": "v++",
+  "logFile": "/home/u250/distributed-graph-fpga/hw_src/_x/link/link.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2021.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -s -t hw --platform xilinx_u250_gen3x16_xdma_3_1_202020_1 --hls.jobs 8 --vivado.synth.jobs 8 --vivado.impl.jobs 8 -l -o kernel_pagerank_0.hw.xclbin kernel_pagerank_0.hw.xo --config connectivity.cfg ",
+  "args": [
+   "-s",
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_3_1_202020_1",
+   "--hls.jobs",
+   "8",
+   "--vivado.synth.jobs",
+   "8",
+   "--vivado.impl.jobs",
+   "8",
+   "-l",
+   "-o",
+   "kernel_pagerank_0.hw.xclbin",
+   "kernel_pagerank_0.hw.xo",
+   "--config",
+   "connectivity.cfg"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/u250/distributed-graph-fpga/hw_src/connectivity.cfg",
+    "content": "[connectivity]\nnk=kernel_pagerank_0:15:kernel_pagerank_0_1.kernel_pagerank_0_2.kernel_pagerank_0_3.kernel_pagerank_0_4.kernel_pagerank_0_5.kernel_pagerank_0_6.kernel_pagerank_0_7.kernel_pagerank_0_8.kernel_pagerank_0_9.kernel_pagerank_0_10.kernel_pagerank_0_11.kernel_pagerank_0_12.kernel_pagerank_0_13.kernel_pagerank_0_14.kernel_pagerank_0_15\nslr=kernel_pagerank_0_1:SLR0\nslr=kernel_pagerank_0_2:SLR0\nslr=kernel_pagerank_0_3:SLR0\nslr=kernel_pagerank_0_4:SLR0\nslr=kernel_pagerank_0_5:SLR0\nslr=kernel_pagerank_0_6:SLR1\nslr=kernel_pagerank_0_7:SLR1\nslr=kernel_pagerank_0_8:SLR1\nslr=kernel_pagerank_0_9:SLR1\nslr=kernel_pagerank_0_10:SLR1\nslr=kernel_pagerank_0_11:SLR2\nslr=kernel_pagerank_0_12:SLR2\nslr=kernel_pagerank_0_13:SLR2\nslr=kernel_pagerank_0_14:SLR2\nslr=kernel_pagerank_0_15:SLR2\nsp=kernel_pagerank_0_1.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_2.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_3.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_4.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_5.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_6.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_7.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_8.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_9.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_10.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_11.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_12.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_13.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_14.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_15.m_axi_gmem:HOST[0]\n"
+   }
+  ],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 01:13:08 2022",
+ "timestampMillis": "1643242388391",
+ "status": {
+  "cmdId": "4a702337-4e4e-44c5-bfac-bb2065428299",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Jan 27 01:13:12 2022",
+ "timestampMillis": "1643242392612",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_3_1_202020_1.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_3_1_202020_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "kernel_pagerank_0.hw",
+    "file": "/home/u250/distributed-graph-fpga/hw_src/kernel_pagerank_0.hw.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "kernel_pagerank_0",
+     "file": "/home/u250/distributed-graph-fpga/hw_src/kernel_pagerank_0.hw.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/xo/kernel_pagerank_0/kernel_pagerank_0/cpu_sources/pagerank_kernel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "kernel_pagerank_0_1",
+     "kernel_pagerank_0_2",
+     "kernel_pagerank_0_3",
+     "kernel_pagerank_0_4",
+     "kernel_pagerank_0_5",
+     "kernel_pagerank_0_6",
+     "kernel_pagerank_0_7",
+     "kernel_pagerank_0_8",
+     "kernel_pagerank_0_9",
+     "kernel_pagerank_0_10",
+     "kernel_pagerank_0_11",
+     "kernel_pagerank_0_12",
+     "kernel_pagerank_0_13",
+     "kernel_pagerank_0_14",
+     "kernel_pagerank_0_15"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.1. SW Build 3246112 on 2021-06-09-14:19:56"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 01:13:12 2022",
+ "timestampMillis": "1643242392799",
+ "buildStep": {
+  "cmdId": "484263ca-2285-4127-8fd9-8e0724b04983",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/u250/distributed-graph-fpga/hw_src/kernel_pagerank_0.hw.xo -keep --config /home/u250/distributed-graph-fpga/hw_src/_x/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_3_1_202020_1/xilinx_u250_gen3x16_xdma_3_1_202020_1.xpfm --target hw --output_dir /home/u250/distributed-graph-fpga/hw_src/_x/link/int --temp_dir /home/u250/distributed-graph-fpga/hw_src/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/u250/distributed-graph-fpga/hw_src/kernel_pagerank_0.hw.xo",
+   "-keep",
+   "--config",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/syslinkConfig.ini",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_3_1_202020_1/xilinx_u250_gen3x16_xdma_3_1_202020_1.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int",
+   "--temp_dir",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/sys_link"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/syslinkConfig.ini",
+    "content": "nk=kernel_pagerank_0:15:kernel_pagerank_0_1.kernel_pagerank_0_2.kernel_pagerank_0_3.kernel_pagerank_0_4.kernel_pagerank_0_5.kernel_pagerank_0_6.kernel_pagerank_0_7.kernel_pagerank_0_8.kernel_pagerank_0_9.kernel_pagerank_0_10.kernel_pagerank_0_11.kernel_pagerank_0_12.kernel_pagerank_0_13.kernel_pagerank_0_14.kernel_pagerank_0_15\nsp=kernel_pagerank_0_1.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_2.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_3.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_4.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_5.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_6.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_7.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_8.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_9.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_10.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_11.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_12.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_13.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_14.m_axi_gmem:HOST[0]\nsp=kernel_pagerank_0_15.m_axi_gmem:HOST[0]\nslr=kernel_pagerank_0_1:SLR0\nslr=kernel_pagerank_0_2:SLR0\nslr=kernel_pagerank_0_3:SLR0\nslr=kernel_pagerank_0_4:SLR0\nslr=kernel_pagerank_0_5:SLR0\nslr=kernel_pagerank_0_6:SLR1\nslr=kernel_pagerank_0_7:SLR1\nslr=kernel_pagerank_0_8:SLR1\nslr=kernel_pagerank_0_9:SLR1\nslr=kernel_pagerank_0_10:SLR1\nslr=kernel_pagerank_0_11:SLR2\nslr=kernel_pagerank_0_12:SLR2\nslr=kernel_pagerank_0_13:SLR2\nslr=kernel_pagerank_0_14:SLR2\nslr=kernel_pagerank_0_15:SLR2\n\n"
+   }
+  ],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 01:13:12 2022",
+ "timestampMillis": "1643242392800",
+ "status": {
+  "cmdId": "484263ca-2285-4127-8fd9-8e0724b04983",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 01:13:32 2022",
+ "timestampMillis": "1643242412925",
+ "status": {
+  "cmdId": "484263ca-2285-4127-8fd9-8e0724b04983",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 01:13:32 2022",
+ "timestampMillis": "1643242412927",
+ "buildStep": {
+  "cmdId": "7b78f0b4-211e-4132-a7e3-c13e97f5b67b",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/u250/distributed-graph-fpga/hw_src/_x/link/int/sdsl.dat -rtd /home/u250/distributed-graph-fpga/hw_src/_x/link/int/cf2sw.rtd -nofilter /home/u250/distributed-graph-fpga/hw_src/_x/link/int/cf2sw_full.rtd -xclbin /home/u250/distributed-graph-fpga/hw_src/_x/link/int/xclbin_orig.xml -o /home/u250/distributed-graph-fpga/hw_src/_x/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/sdsl.dat",
+   "-rtd",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/cf2sw.rtd",
+   "-nofilter",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/xclbin_orig.xml",
+   "-o",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 01:13:32 2022",
+ "timestampMillis": "1643242412927",
+ "status": {
+  "cmdId": "7b78f0b4-211e-4132-a7e3-c13e97f5b67b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 01:13:41 2022",
+ "timestampMillis": "1643242421352",
+ "status": {
+  "cmdId": "7b78f0b4-211e-4132-a7e3-c13e97f5b67b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 01:13:41 2022",
+ "timestampMillis": "1643242421354",
+ "buildStep": {
+  "cmdId": "f697a566-de0d-4979-89d5-df5ca86beb71",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 01:13:41 2022",
+ "timestampMillis": "1643242421354",
+ "status": {
+  "cmdId": "f697a566-de0d-4979-89d5-df5ca86beb71",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 01:13:41 2022",
+ "timestampMillis": "1643242421645",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 01:13:41 2022",
+ "timestampMillis": "1643242421645",
+ "status": {
+  "cmdId": "f697a566-de0d-4979-89d5-df5ca86beb71",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 01:13:41 2022",
+ "timestampMillis": "1643242421646",
+ "buildStep": {
+  "cmdId": "fbb1a36e-8057-4075-8482-b08a71b1c418",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f xilinx_u250_gen3x16_xdma_3_1_202020_1 --remote_ip_cache /home/u250/distributed-graph-fpga/hw_src/.ipcache -s --output_dir /home/u250/distributed-graph-fpga/hw_src/_x/link/int --log_dir /home/u250/distributed-graph-fpga/hw_src/_x/logs/link --report_dir /home/u250/distributed-graph-fpga/hw_src/_x/reports/link --config /home/u250/distributed-graph-fpga/hw_src/_x/link/int/vplConfig.ini -k /home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/u250/distributed-graph-fpga/hw_src/_x/link --no-info --iprepo /home/u250/distributed-graph-fpga/hw_src/_x/link/int/xo/ip_repo/xilinx_com_hls_kernel_pagerank_0_1_0 --messageDb /home/u250/distributed-graph-fpga/hw_src/_x/link/run_link/vpl.pb /home/u250/distributed-graph-fpga/hw_src/_x/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "xilinx_u250_gen3x16_xdma_3_1_202020_1",
+   "--remote_ip_cache",
+   "/home/u250/distributed-graph-fpga/hw_src/.ipcache",
+   "-s",
+   "--output_dir",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int",
+   "--log_dir",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/logs/link",
+   "--report_dir",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link",
+   "--config",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/vplConfig.ini",
+   "-k",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link",
+   "--no-info",
+   "--iprepo",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/xo/ip_repo/xilinx_com_hls_kernel_pagerank_0_1_0",
+   "--messageDb",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/run_link/vpl.pb",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=/home/u250/distributed-graph-fpga/hw_src\nmisc=BinaryName=kernel_pagerank_0.hw\n\n[connectivity]\nnk=kernel_pagerank_0:15:kernel_pagerank_0_1.kernel_pagerank_0_2.kernel_pagerank_0_3.kernel_pagerank_0_4.kernel_pagerank_0_5.kernel_pagerank_0_6.kernel_pagerank_0_7.kernel_pagerank_0_8.kernel_pagerank_0_9.kernel_pagerank_0_10.kernel_pagerank_0_11.kernel_pagerank_0_12.kernel_pagerank_0_13.kernel_pagerank_0_14.kernel_pagerank_0_15\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\nsynth.jobs=8\nimpl.jobs=8\n\n"
+   }
+  ],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 01:13:41 2022",
+ "timestampMillis": "1643242421647",
+ "status": {
+  "cmdId": "fbb1a36e-8057-4075-8482-b08a71b1c418",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jan 27 01:13:43 2022",
+ "timestampMillis": "1643242423327",
+ "buildStep": {
+  "cmdId": "0134f5e1-1729-4a59-ba36-d70aa6653c97",
+  "name": "vpl",
+  "logFile": "/home/u250/distributed-graph-fpga/hw_src/_x/link/link.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2021.1/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u250_gen3x16_xdma_3_1_202020_1 --remote_ip_cache /home/u250/distributed-graph-fpga/hw_src/.ipcache -s --output_dir /home/u250/distributed-graph-fpga/hw_src/_x/link/int --log_dir /home/u250/distributed-graph-fpga/hw_src/_x/logs/link --report_dir /home/u250/distributed-graph-fpga/hw_src/_x/reports/link --config /home/u250/distributed-graph-fpga/hw_src/_x/link/int/vplConfig.ini -k /home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/u250/distributed-graph-fpga/hw_src/_x/link --no-info --iprepo /home/u250/distributed-graph-fpga/hw_src/_x/link/int/xo/ip_repo/xilinx_com_hls_kernel_pagerank_0_1_0 --messageDb /home/u250/distributed-graph-fpga/hw_src/_x/link/run_link/vpl.pb /home/u250/distributed-graph-fpga/hw_src/_x/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 01:13:43 2022",
+ "timestampMillis": "1643242423327",
+ "status": {
+  "cmdId": "0134f5e1-1729-4a59-ba36-d70aa6653c97",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Thu Jan 27 01:13:46 2022",
+ "timestampMillis": "1643242426779",
+ "vivadoProject": {
+  "openDir": "/home/u250/distributed-graph-fpga/hw_src/_x/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 01:13:46 2022",
+ "timestampMillis": "1643242426780",
+ "buildStep": {
+  "cmdId": "a64eb1a6-753b-4dbe-a81b-5d831845b7c3",
+  "name": "vivado",
+  "logFile": "/home/u250/distributed-graph-fpga/hw_src/_x/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 01:13:46 2022",
+ "timestampMillis": "1643242426781",
+ "status": {
+  "cmdId": "a64eb1a6-753b-4dbe-a81b-5d831845b7c3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jan 27 01:20:41 2022",
+ "timestampMillis": "1643242841199",
+ "buildStep": {
+  "cmdId": "f3d8ef81-9b7a-4278-9e77-17f753f4bfd1",
+  "name": "vivado.impl",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src/_x/link/vivado/vpl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 01:20:41 2022",
+ "timestampMillis": "1643242841199",
+ "status": {
+  "cmdId": "f3d8ef81-9b7a-4278-9e77-17f753f4bfd1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jan 27 01:20:41 2022",
+ "timestampMillis": "1643242841200",
+ "buildStep": {
+  "cmdId": "b2463265-5596-4e45-9a49-30c6d16876e0",
+  "name": "vivado.impl.impl_1",
+  "logFile": "/home/u250/distributed-graph-fpga/hw_src/_x/link/vivado/vpl/prj/prj.runs/impl_1/runme.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src/_x/link/vivado/vpl/prj/prj.runs/impl_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 01:20:41 2022",
+ "timestampMillis": "1643242841200",
+ "status": {
+  "cmdId": "b2463265-5596-4e45-9a49-30c6d16876e0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:16:08 2022",
+ "timestampMillis": "1643264168551",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/link/vivado/vpl/prj/prj.runs/impl_1/system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:18:32 2022",
+ "timestampMillis": "1643264312573",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_service.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:18:32 2022",
+ "timestampMillis": "1643264312575",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_service.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594048",
+ "status": {
+  "cmdId": "a64eb1a6-753b-4dbe-a81b-5d831845b7c3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594113",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_kernel_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594113",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_full_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594113",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_slr_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594114",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_kernel_util_synthed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594114",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_full_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594115",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_full_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594115",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_kernel_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594115",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_full_util_synthed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594115",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_slr_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594116",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_kernel_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594116",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_kernel_util_placed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594116",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_slr_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594116",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_kernel_util_routed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594117",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_slr_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594118",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/syn/ulp_kernel_pagerank_0_10_0_synth_1_ulp_kernel_pagerank_0_10_0_utilization_synth.rpt",
+  "name": "kernel_pagerank_0",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594119",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/syn/ulp_kernel_pagerank_0_5_0_synth_1_ulp_kernel_pagerank_0_5_0_utilization_synth.rpt",
+  "name": "kernel_pagerank_0",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594119",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/syn/ulp_kernel_pagerank_0_12_0_synth_1_ulp_kernel_pagerank_0_12_0_utilization_synth.rpt",
+  "name": "kernel_pagerank_0",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594119",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": "b2463265-5596-4e45-9a49-30c6d16876e0"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594129",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "b2463265-5596-4e45-9a49-30c6d16876e0"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594139",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "b2463265-5596-4e45-9a49-30c6d16876e0"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594139",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpv",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_CONCISE",
+  "cmdId": "b2463265-5596-4e45-9a49-30c6d16876e0"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594158",
+ "status": {
+  "cmdId": "0134f5e1-1729-4a59-ba36-d70aa6653c97",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594180",
+ "status": {
+  "cmdId": "fbb1a36e-8057-4075-8482-b08a71b1c418",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594182",
+ "buildStep": {
+  "cmdId": "bf5b27a3-ab0e-4df8-966a-0f87b1a7169e",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594182",
+ "status": {
+  "cmdId": "bf5b27a3-ab0e-4df8-966a-0f87b1a7169e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594184",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_pagerank_0.hw_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594185",
+ "buildStep": {
+  "cmdId": "eb318cc0-82de-4b7a-a3d8-b8bdc69696a8",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/u250/distributed-graph-fpga/hw_src/_x/link/int/address_map.xml -sdsl /home/u250/distributed-graph-fpga/hw_src/_x/link/int/sdsl.dat -xclbin /home/u250/distributed-graph-fpga/hw_src/_x/link/int/xclbin_orig.xml -rtd /home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_pagerank_0.hw.rtd -o /home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_pagerank_0.hw.xml",
+  "args": [
+   "-a",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/address_map.xml",
+   "-sdsl",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/sdsl.dat",
+   "-xclbin",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_pagerank_0.hw.rtd",
+   "-o",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_pagerank_0.hw.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:39:54 2022",
+ "timestampMillis": "1643265594185",
+ "status": {
+  "cmdId": "eb318cc0-82de-4b7a-a3d8-b8bdc69696a8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:40:02 2022",
+ "timestampMillis": "1643265602305",
+ "status": {
+  "cmdId": "eb318cc0-82de-4b7a-a3d8-b8bdc69696a8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 07:40:02 2022",
+ "timestampMillis": "1643265602307",
+ "buildStep": {
+  "cmdId": "9308823a-22d5-42e8-a3b6-216dd9d8e1aa",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_pagerank_0.hw.rtd",
+   "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:40:02 2022",
+ "timestampMillis": "1643265602308",
+ "status": {
+  "cmdId": "9308823a-22d5-42e8-a3b6-216dd9d8e1aa",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:40:02 2022",
+ "timestampMillis": "1643265602311",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:40:02 2022",
+ "timestampMillis": "1643265602312",
+ "status": {
+  "cmdId": "9308823a-22d5-42e8-a3b6-216dd9d8e1aa",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:40:02 2022",
+ "timestampMillis": "1643265602312",
+ "status": {
+  "cmdId": "bf5b27a3-ab0e-4df8-966a-0f87b1a7169e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 07:40:02 2022",
+ "timestampMillis": "1643265602313",
+ "buildStep": {
+  "cmdId": "7a6dc66e-e9bc-4c3f-ae53-3afd8590e4fc",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/home/u250/distributed-graph-fpga/hw_src/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_pagerank_0.hw.rtd --append-section :JSON:/home/u250/distributed-graph-fpga/hw_src/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_pagerank_0.hw_xml.rtd --add-section BUILD_METADATA:JSON:/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_pagerank_0.hw_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_pagerank_0.hw.xml --add-section SYSTEM_METADATA:RAW:/home/u250/distributed-graph-fpga/hw_src/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u250_gen3x16_xdma_3_1_202020_1 --output /home/u250/distributed-graph-fpga/hw_src/kernel_pagerank_0.hw.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/u250/distributed-graph-fpga/hw_src/_x/link/int/partial.bit",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:true",
+   "--add-section",
+   ":JSON:/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_pagerank_0.hw.rtd",
+   "--append-section",
+   ":JSON:/home/u250/distributed-graph-fpga/hw_src/_x/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_pagerank_0.hw_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_pagerank_0.hw_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/u250/distributed-graph-fpga/hw_src/_x/link/int/kernel_pagerank_0.hw.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/u250/distributed-graph-fpga/hw_src/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--key-value",
+   "SYS:PlatformVBNV:xilinx_u250_gen3x16_xdma_3_1_202020_1",
+   "--output",
+   "/home/u250/distributed-graph-fpga/hw_src/kernel_pagerank_0.hw.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:40:02 2022",
+ "timestampMillis": "1643265602313",
+ "status": {
+  "cmdId": "7a6dc66e-e9bc-4c3f-ae53-3afd8590e4fc",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:40:02 2022",
+ "timestampMillis": "1643265602564",
+ "status": {
+  "cmdId": "7a6dc66e-e9bc-4c3f-ae53-3afd8590e4fc",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 07:40:02 2022",
+ "timestampMillis": "1643265602565",
+ "buildStep": {
+  "cmdId": "db4ad357-ac1d-425b-8f35-5597d400aabc",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /home/u250/distributed-graph-fpga/hw_src/kernel_pagerank_0.hw.xclbin.info --input /home/u250/distributed-graph-fpga/hw_src/kernel_pagerank_0.hw.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/home/u250/distributed-graph-fpga/hw_src/kernel_pagerank_0.hw.xclbin.info",
+   "--input",
+   "/home/u250/distributed-graph-fpga/hw_src/kernel_pagerank_0.hw.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:40:02 2022",
+ "timestampMillis": "1643265602565",
+ "status": {
+  "cmdId": "db4ad357-ac1d-425b-8f35-5597d400aabc",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:40:03 2022",
+ "timestampMillis": "1643265603187",
+ "status": {
+  "cmdId": "db4ad357-ac1d-425b-8f35-5597d400aabc",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 07:40:03 2022",
+ "timestampMillis": "1643265603189",
+ "buildStep": {
+  "cmdId": "45cd6ad9-94b3-4929-8ded-f5590b2f616d",
+  "name": "generate_sc_driver",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/u250/distributed-graph-fpga/hw_src"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:40:03 2022",
+ "timestampMillis": "1643265603190",
+ "status": {
+  "cmdId": "45cd6ad9-94b3-4929-8ded-f5590b2f616d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:40:03 2022",
+ "timestampMillis": "1643265603190",
+ "status": {
+  "cmdId": "45cd6ad9-94b3-4929-8ded-f5590b2f616d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:40:03 2022",
+ "timestampMillis": "1643265603238",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/system_estimate_kernel_pagerank_0.hw.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:40:03 2022",
+ "timestampMillis": "1643265603354",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/reports/link/v++_link_kernel_pagerank_0.hw_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:40:03 2022",
+ "timestampMillis": "1643265603355",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/v++_link_kernel_pagerank_0.hw_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 07:40:03 2022",
+ "timestampMillis": "1643265603362",
+ "report": {
+  "path": "/home/u250/distributed-graph-fpga/hw_src/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 07:40:03 2022",
+ "timestampMillis": "1643265603362",
+ "status": {
+  "cmdId": "4a702337-4e4e-44c5-bfac-bb2065428299",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
