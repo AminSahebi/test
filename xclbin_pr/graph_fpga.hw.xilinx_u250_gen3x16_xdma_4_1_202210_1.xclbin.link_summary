@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Mon Nov  6 22:22:30 2023",
- "timestampMillis": "1699309350731",
+ "dateTimestamp": "Tue Nov  7 10:12:12 2023",
+ "timestampMillis": "1699351932092",
  "buildStep": {
-  "cmdId": "c09dc4dc-156c-466f-b3e9-a4de66c5e18c",
+  "cmdId": "5a16e88f-a53f-444f-beab-969cecee6a8b",
   "name": "v++",
   "logFile": "/home/amin/ThunderGP/_x/link/link.steps.log",
   "commandLine": "/opt/Xilinx/Vitis/2022.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --vivado.prop \"run.impl_1.{STEPS.PLACE_DESIGN.ARGS.MORE OPTIONS}={-retiming}\" --vivado.prop run.impl_1.STEPS.PHYS_OPT_DESIGN.IS_ENABLED=true --vivado.prop run.impl_1.STEPS.POST_ROUTE_PHYS_OPT_DESIGN.IS_ENABLED=true --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -DSUB_PARTITION_NUM=1 -DPARTITION_SIZE=524288 -t hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 --save-temps -O3 -I ./ -I ./libfpga -I ./libfpga/common -I ./application/pr -I ./application -DHAVE_EDGE_PROP=0 -DHAVE_UNSIGNED_PROP=0 -DHAVE_APPLY_OUTDEG=1 -DCUSTOMIZE_APPLY=0 -DQUEUE_SIZE_FILTER=16 -DQUEUE_SIZE_MEMORY=512 -DLOG_SCATTER_CACHE_BURST_SIZE=6 -DAPPLY_REF_ARRAY_SIZE=1 -l --kernel_frequency=280 --config ./tmp_fpga_top/gs_kernel.cfg --config ./tmp_fpga_top/apply_kernel.cfg -oxclbin_pr/graph_fpga.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xclbin xclbin_pr/readEdgesCU1.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xo xclbin_pr/vertexApply.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xo ",
@@ -60,7 +60,7 @@
    },
    {
     "path": "/home/amin/ThunderGP/tmp_fpga_top/apply_kernel.cfg",
-    "content": "[connectivity]\nnk = vertexApply:1\nsp = vertexApply_1.m_axi_gmem0:DDR[2]\nsp = vertexApply_1.m_axi_gmem0:DDR[2]\nsp = vertexApply_1.m_axi_gmem5:DDR[3]\nsp = vertexApply_1.m_axi_gmem6:DDR[1]\n\n"
+    "content": "[connectivity]\nnk = vertexApply:1\nsp = vertexApply_1.m_axi_gmem0:DDR[2]\nsp = vertexApply_1.m_axi_gmem0:DDR[2]\nsp = vertexApply_1.m_axi_gmem5:DDR[1]\nsp = vertexApply_1.m_axi_gmem6:DDR[1]\nsp = vertexApply_1.m_axi_gmem7:DDR[3]\n\n"
    }
   ],
   "cwd": "/home/amin/ThunderGP"
@@ -70,10 +70,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Nov  6 22:22:30 2023",
- "timestampMillis": "1699309350731",
+ "dateTimestamp": "Tue Nov  7 10:12:12 2023",
+ "timestampMillis": "1699351932093",
  "status": {
-  "cmdId": "c09dc4dc-156c-466f-b3e9-a4de66c5e18c",
+  "cmdId": "5a16e88f-a53f-444f-beab-969cecee6a8b",
   "state": "CS_RUNNING"
  }
 }
@@ -81,8 +81,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Mon Nov  6 22:22:39 2023",
- "timestampMillis": "1699309359140",
+ "dateTimestamp": "Tue Nov  7 10:12:17 2023",
+ "timestampMillis": "1699351937592",
  "buildSummary": {
   "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
   "hardwareDsa": "",
@@ -148,10 +148,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Mon Nov  6 22:22:39 2023",
- "timestampMillis": "1699309359579",
+ "dateTimestamp": "Tue Nov  7 10:12:17 2023",
+ "timestampMillis": "1699351937910",
  "buildStep": {
-  "cmdId": "4ac15d98-d77d-4e3f-b289-4a7e3ef7d6c7",
+  "cmdId": "690c0e41-d247-4047-809e-08ae7330a4f9",
   "name": "system_link",
   "logFile": "",
   "commandLine": "system_link --xo /home/amin/ThunderGP/xclbin_pr/readEdgesCU1.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xo --xo /home/amin/ThunderGP/xclbin_pr/vertexApply.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xo -keep --config /home/amin/ThunderGP/_x/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm --target hw --output_dir /home/amin/ThunderGP/_x/link/int --temp_dir /home/amin/ThunderGP/_x/link/sys_link",
@@ -175,7 +175,7 @@
   "iniFiles": [
    {
     "path": "/home/amin/ThunderGP/_x/link/int/syslinkConfig.ini",
-    "content": "nk=readEdgesCU1:1\nnk=vertexApply:1\nsp=readEdgesCU1_1.m_axi_gmem0:DDR[0]\nsp=readEdgesCU1_1.m_axi_gmem2:DDR[1]\nsp=readEdgesCU1_1.m_axi_gmem1:DDR[2]\nsp=readEdgesCU1_1.m_axi_gmem1:DDR[3]\nsp=vertexApply_1.m_axi_gmem0:DDR[2]\nsp=vertexApply_1.m_axi_gmem0:DDR[2]\nsp=vertexApply_1.m_axi_gmem5:DDR[3]\nsp=vertexApply_1.m_axi_gmem6:DDR[1]\n\n"
+    "content": "nk=readEdgesCU1:1\nnk=vertexApply:1\nsp=readEdgesCU1_1.m_axi_gmem0:DDR[0]\nsp=readEdgesCU1_1.m_axi_gmem2:DDR[1]\nsp=readEdgesCU1_1.m_axi_gmem1:DDR[2]\nsp=readEdgesCU1_1.m_axi_gmem1:DDR[3]\nsp=vertexApply_1.m_axi_gmem0:DDR[2]\nsp=vertexApply_1.m_axi_gmem0:DDR[2]\nsp=vertexApply_1.m_axi_gmem5:DDR[1]\nsp=vertexApply_1.m_axi_gmem6:DDR[1]\nsp=vertexApply_1.m_axi_gmem7:DDR[3]\n\n"
    }
   ],
   "cwd": "/home/amin/ThunderGP"
@@ -185,10 +185,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Nov  6 22:22:39 2023",
- "timestampMillis": "1699309359579",
+ "dateTimestamp": "Tue Nov  7 10:12:17 2023",
+ "timestampMillis": "1699351937910",
  "status": {
-  "cmdId": "4ac15d98-d77d-4e3f-b289-4a7e3ef7d6c7",
+  "cmdId": "690c0e41-d247-4047-809e-08ae7330a4f9",
   "state": "CS_RUNNING"
  }
 }
@@ -196,10 +196,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Nov  6 22:22:55 2023",
- "timestampMillis": "1699309375545",
+ "dateTimestamp": "Tue Nov  7 10:12:34 2023",
+ "timestampMillis": "1699351954740",
  "status": {
-  "cmdId": "4ac15d98-d77d-4e3f-b289-4a7e3ef7d6c7",
+  "cmdId": "690c0e41-d247-4047-809e-08ae7330a4f9",
   "state": "CS_PASSED"
  }
 }
@@ -207,10 +207,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Mon Nov  6 22:22:55 2023",
- "timestampMillis": "1699309375546",
+ "dateTimestamp": "Tue Nov  7 10:12:34 2023",
+ "timestampMillis": "1699351954741",
  "buildStep": {
-  "cmdId": "855d6795-db82-4bd9-a37d-202371628f9b",
+  "cmdId": "e342ca82-08ca-42b1-b60e-724d2873ca3f",
   "name": "cf2sw",
   "logFile": "",
   "commandLine": "cf2sw -sdsl /home/amin/ThunderGP/_x/link/int/sdsl.dat -rtd /home/amin/ThunderGP/_x/link/int/cf2sw.rtd -nofilter /home/amin/ThunderGP/_x/link/int/cf2sw_full.rtd -xclbin /home/amin/ThunderGP/_x/link/int/xclbin_orig.xml -o /home/amin/ThunderGP/_x/link/int/xclbin_orig.1.xml",
@@ -234,10 +234,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Nov  6 22:22:55 2023",
- "timestampMillis": "1699309375546",
+ "dateTimestamp": "Tue Nov  7 10:12:34 2023",
+ "timestampMillis": "1699351954742",
  "status": {
-  "cmdId": "855d6795-db82-4bd9-a37d-202371628f9b",
+  "cmdId": "e342ca82-08ca-42b1-b60e-724d2873ca3f",
   "state": "CS_RUNNING"
  }
 }
@@ -245,10 +245,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Nov  6 22:23:00 2023",
- "timestampMillis": "1699309380490",
+ "dateTimestamp": "Tue Nov  7 10:12:39 2023",
+ "timestampMillis": "1699351959588",
  "status": {
-  "cmdId": "855d6795-db82-4bd9-a37d-202371628f9b",
+  "cmdId": "e342ca82-08ca-42b1-b60e-724d2873ca3f",
   "state": "CS_PASSED"
  }
 }
@@ -256,10 +256,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Mon Nov  6 22:23:00 2023",
- "timestampMillis": "1699309380492",
+ "dateTimestamp": "Tue Nov  7 10:12:39 2023",
+ "timestampMillis": "1699351959589",
  "buildStep": {
-  "cmdId": "422e0afe-0826-4647-aa2b-e5d962835d6c",
+  "cmdId": "dc97b970-eb09-44c4-b515-40816830c14a",
   "name": "rtd2_system_diagram",
   "logFile": "",
   "commandLine": "rtd2SystemDiagram",
@@ -272,10 +272,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Nov  6 22:23:00 2023",
- "timestampMillis": "1699309380492",
+ "dateTimestamp": "Tue Nov  7 10:12:39 2023",
+ "timestampMillis": "1699351959590",
  "status": {
-  "cmdId": "422e0afe-0826-4647-aa2b-e5d962835d6c",
+  "cmdId": "dc97b970-eb09-44c4-b515-40816830c14a",
   "state": "CS_RUNNING"
  }
 }
@@ -283,8 +283,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Nov  6 22:23:00 2023",
- "timestampMillis": "1699309380882",
+ "dateTimestamp": "Tue Nov  7 10:12:39 2023",
+ "timestampMillis": "1699351959925",
  "report": {
   "path": "/home/amin/ThunderGP/_x/link/int/systemDiagramModel.json",
   "name": "",
@@ -297,10 +297,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Nov  6 22:23:00 2023",
- "timestampMillis": "1699309380882",
+ "dateTimestamp": "Tue Nov  7 10:12:39 2023",
+ "timestampMillis": "1699351959926",
  "status": {
-  "cmdId": "422e0afe-0826-4647-aa2b-e5d962835d6c",
+  "cmdId": "dc97b970-eb09-44c4-b515-40816830c14a",
   "state": "CS_PASSED"
  }
 }
@@ -308,10 +308,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Mon Nov  6 22:23:00 2023",
- "timestampMillis": "1699309380883",
+ "dateTimestamp": "Tue Nov  7 10:12:39 2023",
+ "timestampMillis": "1699351959927",
  "buildStep": {
-  "cmdId": "c00de4c5-ad13-48aa-9517-847e6f863435",
+  "cmdId": "dc2a77ff-00d4-43b9-a57d-94a9d0e56fa7",
   "name": "vpl",
   "logFile": "",
   "commandLine": "vpl -t hw -f xilinx_u250_gen3x16_xdma_4_1_202210_1 -s --kernel_frequency 280 --remote_ip_cache /home/amin/ThunderGP/.ipcache --output_dir /home/amin/ThunderGP/_x/link/int --log_dir /home/amin/ThunderGP/_x/logs/link --report_dir /home/amin/ThunderGP/_x/reports/link --config /home/amin/ThunderGP/_x/link/int/vplConfig.ini -k /home/amin/ThunderGP/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/amin/ThunderGP/_x/link --no-info --iprepo /home/amin/ThunderGP/_x/link/int/xo/ip_repo/xilinx_com_hls_vertexApply_1_0 --iprepo /home/amin/ThunderGP/_x/link/int/xo/ip_repo/xilinx_com_hls_readEdgesCU1_1_0 --messageDb /home/amin/ThunderGP/_x/link/run_link/vpl.pb /home/amin/ThunderGP/_x/link/int/dr.bd.tcl",
@@ -361,10 +361,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Nov  6 22:23:00 2023",
- "timestampMillis": "1699309380883",
+ "dateTimestamp": "Tue Nov  7 10:12:39 2023",
+ "timestampMillis": "1699351959927",
  "status": {
-  "cmdId": "c00de4c5-ad13-48aa-9517-847e6f863435",
+  "cmdId": "dc2a77ff-00d4-43b9-a57d-94a9d0e56fa7",
   "state": "CS_RUNNING"
  }
 }
@@ -372,10 +372,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Mon Nov  6 22:23:02 2023",
- "timestampMillis": "1699309382287",
+ "dateTimestamp": "Tue Nov  7 10:12:41 2023",
+ "timestampMillis": "1699351961392",
  "buildStep": {
-  "cmdId": "55be220b-4a7a-483c-93c4-032b0426cb98",
+  "cmdId": "45d47ea3-fe2a-4a34-b6c6-0b8f313a6fca",
   "name": "vpl",
   "logFile": "/home/amin/ThunderGP/_x/link/link.steps.log",
   "commandLine": "/opt/Xilinx/Vitis/2022.2/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u250_gen3x16_xdma_4_1_202210_1 -s --kernel_frequency 280 --remote_ip_cache /home/amin/ThunderGP/.ipcache --output_dir /home/amin/ThunderGP/_x/link/int --log_dir /home/amin/ThunderGP/_x/logs/link --report_dir /home/amin/ThunderGP/_x/reports/link --config /home/amin/ThunderGP/_x/link/int/vplConfig.ini -k /home/amin/ThunderGP/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/amin/ThunderGP/_x/link --no-info --iprepo /home/amin/ThunderGP/_x/link/int/xo/ip_repo/xilinx_com_hls_vertexApply_1_0 --iprepo /home/amin/ThunderGP/_x/link/int/xo/ip_repo/xilinx_com_hls_readEdgesCU1_1_0 --messageDb /home/amin/ThunderGP/_x/link/run_link/vpl.pb /home/amin/ThunderGP/_x/link/int/dr.bd.tcl ",
@@ -388,10 +388,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Nov  6 22:23:02 2023",
- "timestampMillis": "1699309382287",
+ "dateTimestamp": "Tue Nov  7 10:12:41 2023",
+ "timestampMillis": "1699351961392",
  "status": {
-  "cmdId": "55be220b-4a7a-483c-93c4-032b0426cb98",
+  "cmdId": "45d47ea3-fe2a-4a34-b6c6-0b8f313a6fca",
   "state": "CS_RUNNING"
  }
 }
@@ -399,8 +399,8 @@
 <ENTRY>
 {
  "type": "ET_VivadoProject",
- "dateTimestamp": "Mon Nov  6 22:23:05 2023",
- "timestampMillis": "1699309385379",
+ "dateTimestamp": "Tue Nov  7 10:12:44 2023",
+ "timestampMillis": "1699351964486",
  "vivadoProject": {
   "openDir": "/home/amin/ThunderGP/_x/link/vivado/vpl",
   "openScript": "openprj.tcl",
@@ -411,10 +411,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Mon Nov  6 22:23:05 2023",
- "timestampMillis": "1699309385380",
+ "dateTimestamp": "Tue Nov  7 10:12:44 2023",
+ "timestampMillis": "1699351964487",
  "buildStep": {
-  "cmdId": "17f764a9-a2f3-48d7-8653-5345b182eab0",
+  "cmdId": "856ab3c4-6325-4365-953c-ad13231c382b",
   "name": "vivado",
   "logFile": "/home/amin/ThunderGP/_x/link/vivado/vpl/vivado.log",
   "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
@@ -439,10 +439,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Nov  6 22:23:05 2023",
- "timestampMillis": "1699309385380",
+ "dateTimestamp": "Tue Nov  7 10:12:44 2023",
+ "timestampMillis": "1699351964487",
  "status": {
-  "cmdId": "17f764a9-a2f3-48d7-8653-5345b182eab0",
+  "cmdId": "856ab3c4-6325-4365-953c-ad13231c382b",
   "state": "CS_RUNNING"
  }
 }
@@ -450,8 +450,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Nov  6 22:23:46 2023",
- "timestampMillis": "1699309426721",
+ "dateTimestamp": "Tue Nov  7 10:13:29 2023",
+ "timestampMillis": "1699352009364",
  "report": {
   "path": "/home/amin/ThunderGP/_x/link/int/automation_summary_update_bd.txt",
   "name": "",
@@ -464,10 +464,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Mon Nov  6 22:40:19 2023",
- "timestampMillis": "1699310419330",
+ "dateTimestamp": "Tue Nov  7 10:29:19 2023",
+ "timestampMillis": "1699352959386",
  "buildStep": {
-  "cmdId": "0ddbf468-a79f-44ed-ab0a-0dc532829366",
+  "cmdId": "38208672-4664-464d-9cf5-b5f13efd221f",
   "name": "vivado.impl",
   "logFile": "",
   "commandLine": "",
@@ -480,10 +480,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Nov  6 22:40:19 2023",
- "timestampMillis": "1699310419330",
+ "dateTimestamp": "Tue Nov  7 10:29:19 2023",
+ "timestampMillis": "1699352959387",
  "status": {
-  "cmdId": "0ddbf468-a79f-44ed-ab0a-0dc532829366",
+  "cmdId": "38208672-4664-464d-9cf5-b5f13efd221f",
   "state": "CS_RUNNING"
  }
 }
@@ -491,10 +491,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Mon Nov  6 22:40:19 2023",
- "timestampMillis": "1699310419330",
+ "dateTimestamp": "Tue Nov  7 10:29:19 2023",
+ "timestampMillis": "1699352959387",
  "buildStep": {
-  "cmdId": "5471a0ab-83d3-4a2f-9a41-fc3c6b028192",
+  "cmdId": "e70e66d3-0873-48a6-9234-58b745dc5a35",
   "name": "vivado.impl.impl_1",
   "logFile": "/home/amin/ThunderGP/_x/link/vivado/vpl/prj/prj.runs/impl_1/runme.log",
   "commandLine": "",
@@ -507,10 +507,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Nov  6 22:40:19 2023",
- "timestampMillis": "1699310419330",
+ "dateTimestamp": "Tue Nov  7 10:29:19 2023",
+ "timestampMillis": "1699352959387",
  "status": {
-  "cmdId": "5471a0ab-83d3-4a2f-9a41-fc3c6b028192",
+  "cmdId": "e70e66d3-0873-48a6-9234-58b745dc5a35",
   "state": "CS_RUNNING"
  }
 }
@@ -518,8 +518,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 04:49:59 2023",
- "timestampMillis": "1699332599411",
+ "dateTimestamp": "Tue Nov  7 14:27:34 2023",
+ "timestampMillis": "1699367254641",
  "report": {
   "path": "/home/amin/ThunderGP/_x/link/vivado/vpl/prj/prj.runs/impl_1/system_diagram.json",
   "name": "",
@@ -532,8 +532,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 04:52:28 2023",
- "timestampMillis": "1699332748261",
+ "dateTimestamp": "Tue Nov  7 14:30:06 2023",
+ "timestampMillis": "1699367406289",
  "report": {
   "path": "/home/amin/ThunderGP/_x/link/int/kernel_service.json",
   "name": "",
@@ -546,8 +546,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 04:52:28 2023",
- "timestampMillis": "1699332748262",
+ "dateTimestamp": "Tue Nov  7 14:30:06 2023",
+ "timestampMillis": "1699367406290",
  "report": {
   "path": "/home/amin/ThunderGP/_x/link/int/kernel_service.pb",
   "name": "",
@@ -560,10 +560,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934758",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668776",
  "status": {
-  "cmdId": "17f764a9-a2f3-48d7-8653-5345b182eab0",
+  "cmdId": "856ab3c4-6325-4365-953c-ad13231c382b",
   "state": "CS_PASSED"
  }
 }
@@ -571,8 +571,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934796",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668815",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_kernel_util_synthed.rpt",
   "name": "",
@@ -585,8 +585,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934797",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668815",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_full_util_synthed.rpt",
   "name": "",
@@ -599,8 +599,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934797",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668815",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_kernel_util_routed.rpt",
   "name": "",
@@ -613,8 +613,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934798",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668816",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_kernel_util_routed.xutil",
   "name": "",
@@ -627,8 +627,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934798",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668816",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_slr_util_placed.rpt",
   "name": "",
@@ -641,8 +641,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934798",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668816",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_kernel_util_placed.rpt",
   "name": "",
@@ -655,8 +655,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934798",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668817",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_kernel_util_synthed.xutil",
   "name": "",
@@ -669,8 +669,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934799",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668817",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_slr_util_placed.pb",
   "name": "",
@@ -683,8 +683,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934799",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668817",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_full_util_routed.rpt",
   "name": "",
@@ -697,8 +697,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934799",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668817",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_slr_util_routed.rpt",
   "name": "",
@@ -711,8 +711,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934800",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668818",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_kernel_util_placed.xutil",
   "name": "",
@@ -725,8 +725,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934800",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668818",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_full_util_synthed.pb",
   "name": "",
@@ -739,8 +739,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934800",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668818",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_full_util_routed.pb",
   "name": "",
@@ -753,8 +753,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934800",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668819",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_slr_util_routed.pb",
   "name": "",
@@ -767,8 +767,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934801",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668819",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/syn/ulp_memory_subsystem_0_synth_1_ulp_memory_subsystem_0_utilization_synth.rpt",
   "name": "",
@@ -781,22 +781,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934802",
- "report": {
-  "path": "/home/amin/ThunderGP/_x/reports/link/syn/ulp_vertexApply_1_0_synth_1_ulp_vertexApply_1_0_utilization_synth.rpt",
-  "name": "vertexApply",
-  "fileType": "TEXT",
-  "reportType": "GLOBAL_REPORT_UTILIZATION",
-  "cmdId": ""
- }
-}
-</ENTRY>
-<ENTRY>
-{
- "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934802",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668820",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/syn/ulp_readEdgesCU1_1_0_synth_1_ulp_readEdgesCU1_1_0_utilization_synth.rpt",
   "name": "readEdgesCU1",
@@ -809,10 +795,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934802",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668820",
  "report": {
-  "path": "/home/amin/ThunderGP/_x/reports/link/syn/bd_b35e_interconnect_DDR4_MEM01_0_synth_1_bd_b35e_interconnect_DDR4_MEM01_0_utilization_synth.rpt",
+  "path": "/home/amin/ThunderGP/_x/reports/link/syn/bd_b35e_interconnect_DDR4_MEM02_0_synth_1_bd_b35e_interconnect_DDR4_MEM02_0_utilization_synth.rpt",
   "name": "",
   "fileType": "TEXT",
   "reportType": "GLOBAL_REPORT_UTILIZATION",
@@ -823,8 +809,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934802",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668820",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/syn/bd_b35e_interconnect_M00_AXI_MEM00_0_synth_1_bd_b35e_interconnect_M00_AXI_MEM00_0_utilization_synth.rpt",
   "name": "",
@@ -837,108 +823,108 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934803",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668820",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_system_diagram.json",
   "name": "",
   "fileType": "JSON",
   "reportType": "SYSTEM_DIAGRAM_PLUS",
-  "cmdId": "5471a0ab-83d3-4a2f-9a41-fc3c6b028192"
+  "cmdId": "e70e66d3-0873-48a6-9234-58b745dc5a35"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934816",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668833",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpt",
   "name": "",
   "fileType": "TEXT",
   "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
-  "cmdId": "5471a0ab-83d3-4a2f-9a41-fc3c6b028192"
+  "cmdId": "e70e66d3-0873-48a6-9234-58b745dc5a35"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934828",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668845",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpx",
   "name": "",
   "fileType": "BINARY_PROTOBUF",
   "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
-  "cmdId": "5471a0ab-83d3-4a2f-9a41-fc3c6b028192"
+  "cmdId": "e70e66d3-0873-48a6-9234-58b745dc5a35"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934829",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668846",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpv",
   "name": "",
   "fileType": "BINARY_PROTOBUF",
   "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_CONCISE",
-  "cmdId": "5471a0ab-83d3-4a2f-9a41-fc3c6b028192"
+  "cmdId": "e70e66d3-0873-48a6-9234-58b745dc5a35"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934842",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668860",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_postroute_physopted.rpt",
   "name": "",
   "fileType": "TEXT",
   "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
-  "cmdId": "5471a0ab-83d3-4a2f-9a41-fc3c6b028192"
+  "cmdId": "e70e66d3-0873-48a6-9234-58b745dc5a35"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934855",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668872",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_postroute_physopted.rpx",
   "name": "",
   "fileType": "BINARY_PROTOBUF",
   "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
-  "cmdId": "5471a0ab-83d3-4a2f-9a41-fc3c6b028192"
+  "cmdId": "e70e66d3-0873-48a6-9234-58b745dc5a35"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934855",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668873",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_postroute_physopted.rpv",
   "name": "",
   "fileType": "BINARY_PROTOBUF",
   "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_CONCISE",
-  "cmdId": "5471a0ab-83d3-4a2f-9a41-fc3c6b028192"
+  "cmdId": "e70e66d3-0873-48a6-9234-58b745dc5a35"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934869",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668888",
  "status": {
-  "cmdId": "55be220b-4a7a-483c-93c4-032b0426cb98",
+  "cmdId": "45d47ea3-fe2a-4a34-b6c6-0b8f313a6fca",
   "state": "CS_PASSED"
  }
 }
@@ -946,10 +932,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934878",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668898",
  "status": {
-  "cmdId": "c00de4c5-ad13-48aa-9517-847e6f863435",
+  "cmdId": "dc2a77ff-00d4-43b9-a57d-94a9d0e56fa7",
   "state": "CS_PASSED"
  }
 }
@@ -957,10 +943,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934879",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668899",
  "buildStep": {
-  "cmdId": "e5800cf5-65e4-4571-a645-c5c062f65d23",
+  "cmdId": "24df0dad-fe86-4056-93cc-65f3b8cba57d",
   "name": "rtdgen",
   "logFile": "",
   "commandLine": "rtdgen",
@@ -973,10 +959,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934879",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668899",
  "status": {
-  "cmdId": "e5800cf5-65e4-4571-a645-c5c062f65d23",
+  "cmdId": "24df0dad-fe86-4056-93cc-65f3b8cba57d",
   "state": "CS_RUNNING"
  }
 }
@@ -984,8 +970,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934895",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668908",
  "report": {
   "path": "/home/amin/ThunderGP/_x/link/int/graph_fpga.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1_xml.rtd",
   "name": "",
@@ -998,10 +984,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934896",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668909",
  "buildStep": {
-  "cmdId": "c16b83e5-c9dd-4dea-b5ae-99e6908bae10",
+  "cmdId": "0ba4f399-28f4-4510-af19-2febc91fa6a5",
   "name": "cf2sw",
   "logFile": "",
   "commandLine": "cf2sw -a /home/amin/ThunderGP/_x/link/int/address_map.xml -sdsl /home/amin/ThunderGP/_x/link/int/sdsl.dat -xclbin /home/amin/ThunderGP/_x/link/int/xclbin_orig.xml -rtd /home/amin/ThunderGP/_x/link/int/graph_fpga.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.rtd -o /home/amin/ThunderGP/_x/link/int/graph_fpga.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xml",
@@ -1025,10 +1011,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:34 2023",
- "timestampMillis": "1699335934896",
+ "dateTimestamp": "Tue Nov  7 15:41:08 2023",
+ "timestampMillis": "1699371668909",
  "status": {
-  "cmdId": "c16b83e5-c9dd-4dea-b5ae-99e6908bae10",
+  "cmdId": "0ba4f399-28f4-4510-af19-2febc91fa6a5",
   "state": "CS_RUNNING"
  }
 }
@@ -1036,10 +1022,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939139",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673116",
  "status": {
-  "cmdId": "c16b83e5-c9dd-4dea-b5ae-99e6908bae10",
+  "cmdId": "0ba4f399-28f4-4510-af19-2febc91fa6a5",
   "state": "CS_PASSED"
  }
 }
@@ -1047,10 +1033,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939139",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673117",
  "buildStep": {
-  "cmdId": "aa407205-637f-4f83-ada2-b8b3a82042e8",
+  "cmdId": "1389d4f6-e608-42a3-9e48-7431e8e9aacb",
   "name": "rtdgen",
   "logFile": "",
   "commandLine": "writeSystemDiagram",
@@ -1066,10 +1052,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939140",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673117",
  "status": {
-  "cmdId": "aa407205-637f-4f83-ada2-b8b3a82042e8",
+  "cmdId": "1389d4f6-e608-42a3-9e48-7431e8e9aacb",
   "state": "CS_RUNNING"
  }
 }
@@ -1077,8 +1063,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939142",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673119",
  "report": {
   "path": "/home/amin/ThunderGP/_x/link/int/systemDiagramModelSlrBaseAddress.json",
   "name": "",
@@ -1091,10 +1077,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939142",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673120",
  "status": {
-  "cmdId": "aa407205-637f-4f83-ada2-b8b3a82042e8",
+  "cmdId": "1389d4f6-e608-42a3-9e48-7431e8e9aacb",
   "state": "CS_PASSED"
  }
 }
@@ -1102,10 +1088,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939142",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673120",
  "buildStep": {
-  "cmdId": "93d17430-77c5-4f21-a610-84572e69a4d7",
+  "cmdId": "a046ce8b-df9d-4e43-b56f-1558b9dcd897",
   "name": "rtdgen",
   "logFile": "",
   "commandLine": "writeAutomationSummary",
@@ -1120,10 +1106,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939143",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673120",
  "status": {
-  "cmdId": "93d17430-77c5-4f21-a610-84572e69a4d7",
+  "cmdId": "a046ce8b-df9d-4e43-b56f-1558b9dcd897",
   "state": "CS_RUNNING"
  }
 }
@@ -1131,8 +1117,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939143",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673121",
  "report": {
   "path": "/home/amin/ThunderGP/_x/link/int/automation_summary.txt",
   "name": "",
@@ -1145,10 +1131,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939144",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673121",
  "status": {
-  "cmdId": "93d17430-77c5-4f21-a610-84572e69a4d7",
+  "cmdId": "a046ce8b-df9d-4e43-b56f-1558b9dcd897",
   "state": "CS_PASSED"
  }
 }
@@ -1156,10 +1142,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939144",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673121",
  "status": {
-  "cmdId": "e5800cf5-65e4-4571-a645-c5c062f65d23",
+  "cmdId": "24df0dad-fe86-4056-93cc-65f3b8cba57d",
   "state": "CS_PASSED"
  }
 }
@@ -1167,10 +1153,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939145",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673122",
  "buildStep": {
-  "cmdId": "0531eda3-1d4a-4ca9-93ee-b3aca939163b",
+  "cmdId": "9df4ec29-b060-4639-9c32-d378ca668226",
   "name": "xclbinutil",
   "logFile": "",
   "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/home/amin/ThunderGP/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/home/amin/ThunderGP/_x/link/int/graph_fpga.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.rtd --append-section :JSON:/home/amin/ThunderGP/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/amin/ThunderGP/_x/link/int/graph_fpga.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1_xml.rtd --add-section BUILD_METADATA:JSON:/home/amin/ThunderGP/_x/link/int/graph_fpga.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/amin/ThunderGP/_x/link/int/graph_fpga.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xml --add-section SYSTEM_METADATA:RAW:/home/amin/ThunderGP/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u250_gen3x16_xdma_4_1_202210_1 --output /home/amin/ThunderGP/xclbin_pr/graph_fpga.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xclbin",
@@ -1207,10 +1193,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939145",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673123",
  "status": {
-  "cmdId": "0531eda3-1d4a-4ca9-93ee-b3aca939163b",
+  "cmdId": "9df4ec29-b060-4639-9c32-d378ca668226",
   "state": "CS_RUNNING"
  }
 }
@@ -1218,10 +1204,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939336",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673311",
  "status": {
-  "cmdId": "0531eda3-1d4a-4ca9-93ee-b3aca939163b",
+  "cmdId": "9df4ec29-b060-4639-9c32-d378ca668226",
   "state": "CS_PASSED"
  }
 }
@@ -1229,10 +1215,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939337",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673313",
  "buildStep": {
-  "cmdId": "38e859ef-5ccf-43bc-8b83-8a2f106bc522",
+  "cmdId": "91d2cf9c-1afe-49cc-b93d-19387cfa017d",
   "name": "xclbinutilinfo",
   "logFile": "",
   "commandLine": "xclbinutil --quiet --force --info /home/amin/ThunderGP/xclbin_pr/graph_fpga.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xclbin.info --input /home/amin/ThunderGP/xclbin_pr/graph_fpga.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xclbin",
@@ -1252,10 +1238,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939337",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673313",
  "status": {
-  "cmdId": "38e859ef-5ccf-43bc-8b83-8a2f106bc522",
+  "cmdId": "91d2cf9c-1afe-49cc-b93d-19387cfa017d",
   "state": "CS_RUNNING"
  }
 }
@@ -1263,10 +1249,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939949",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673942",
  "status": {
-  "cmdId": "38e859ef-5ccf-43bc-8b83-8a2f106bc522",
+  "cmdId": "91d2cf9c-1afe-49cc-b93d-19387cfa017d",
   "state": "CS_PASSED"
  }
 }
@@ -1274,10 +1260,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939951",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673943",
  "buildStep": {
-  "cmdId": "3cfc524d-5fcd-49db-83a7-bd7f7ff2acbc",
+  "cmdId": "82f0a3d5-3aa4-4219-831b-7b509feeba70",
   "name": "generate_sc_driver",
   "logFile": "",
   "commandLine": "",
@@ -1290,10 +1276,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939951",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673944",
  "status": {
-  "cmdId": "3cfc524d-5fcd-49db-83a7-bd7f7ff2acbc",
+  "cmdId": "82f0a3d5-3aa4-4219-831b-7b509feeba70",
   "state": "CS_RUNNING"
  }
 }
@@ -1301,10 +1287,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:39 2023",
- "timestampMillis": "1699335939951",
+ "dateTimestamp": "Tue Nov  7 15:41:13 2023",
+ "timestampMillis": "1699371673944",
  "status": {
-  "cmdId": "3cfc524d-5fcd-49db-83a7-bd7f7ff2acbc",
+  "cmdId": "82f0a3d5-3aa4-4219-831b-7b509feeba70",
   "state": "CS_PASSED"
  }
 }
@@ -1312,8 +1298,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:40 2023",
- "timestampMillis": "1699335940051",
+ "dateTimestamp": "Tue Nov  7 15:41:14 2023",
+ "timestampMillis": "1699371674013",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/system_estimate_graph_fpga.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xtxt",
   "name": "",
@@ -1326,8 +1312,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:40 2023",
- "timestampMillis": "1699335940054",
+ "dateTimestamp": "Tue Nov  7 15:41:14 2023",
+ "timestampMillis": "1699371674015",
  "report": {
   "path": "/home/amin/ThunderGP/_x/logs/optraceViewer.html",
   "name": "",
@@ -1340,10 +1326,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov  7 05:45:40 2023",
- "timestampMillis": "1699335940054",
+ "dateTimestamp": "Tue Nov  7 15:41:14 2023",
+ "timestampMillis": "1699371674016",
  "status": {
-  "cmdId": "c09dc4dc-156c-466f-b3e9-a4de66c5e18c",
+  "cmdId": "5a16e88f-a53f-444f-beab-969cecee6a8b",
   "state": "CS_PASSED"
  }
 }
@@ -1351,8 +1337,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:40 2023",
- "timestampMillis": "1699335940108",
+ "dateTimestamp": "Tue Nov  7 15:41:14 2023",
+ "timestampMillis": "1699371674069",
  "report": {
   "path": "/home/amin/ThunderGP/_x/reports/link/v++_link_graph_fpga.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1_guidance.html",
   "name": "",
@@ -1365,8 +1351,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov  7 05:45:40 2023",
- "timestampMillis": "1699335940109",
+ "dateTimestamp": "Tue Nov  7 15:41:14 2023",
+ "timestampMillis": "1699371674070",
  "report": {
   "path": "/home/amin/ThunderGP/_x/v++_link_graph_fpga.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1_guidance.pb3",
   "name": "",
