@@ -1,0 +1,257 @@
+<ENTRY>
+{
+ "thisFile": "/home/amin/ThunderGP-modified/xclbin_pr/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Nov  8 12:08:37 2023",
+ "timestampMillis": "1699445317905",
+ "buildStep": {
+  "cmdId": "092e6c53-2ce6-4fa8-86ee-3c7a519cfd65",
+  "name": "v++",
+  "logFile": "/home/amin/ThunderGP-modified/_x/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2022.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --vivado.prop \"run.impl_1.{STEPS.PLACE_DESIGN.ARGS.MORE OPTIONS}={-retiming}\" --vivado.prop run.impl_1.STEPS.PHYS_OPT_DESIGN.IS_ENABLED=true --vivado.prop run.impl_1.STEPS.POST_ROUTE_PHYS_OPT_DESIGN.IS_ENABLED=true --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -DSUB_PARTITION_NUM=1 -DPARTITION_SIZE=524288 -t hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 --save-temps -O3 -I ./ -I ./libfpga -I ./libfpga/common -I ./application/pr -I ./application -DHAVE_EDGE_PROP=0 -DHAVE_UNSIGNED_PROP=0 -DHAVE_APPLY_OUTDEG=1 -DCUSTOMIZE_APPLY=0 -DQUEUE_SIZE_FILTER=16 -DQUEUE_SIZE_MEMORY=512 -DLOG_SCATTER_CACHE_BURST_SIZE=6 -DAPPLY_REF_ARRAY_SIZE=1 -c -k readEdgesCU3 -Itmp_fpga_top -oxclbin_pr/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xo tmp_fpga_top/scatter_gather_top_3.cpp ",
+  "args": [
+   "-DSUB_PARTITION_NUM=1",
+   "-DPARTITION_SIZE=524288",
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "--save-temps",
+   "-O3",
+   "-I",
+   "./",
+   "-I",
+   "./libfpga",
+   "-I",
+   "./libfpga/common",
+   "-I",
+   "./application/pr",
+   "-I",
+   "./application",
+   "-DHAVE_EDGE_PROP=0",
+   "-DHAVE_UNSIGNED_PROP=0",
+   "-DHAVE_APPLY_OUTDEG=1",
+   "-DCUSTOMIZE_APPLY=0",
+   "-DQUEUE_SIZE_FILTER=16",
+   "-DQUEUE_SIZE_MEMORY=512",
+   "-DLOG_SCATTER_CACHE_BURST_SIZE=6",
+   "-DAPPLY_REF_ARRAY_SIZE=1",
+   "-c",
+   "-k",
+   "readEdgesCU3",
+   "-Itmp_fpga_top",
+   "-oxclbin_pr/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xo",
+   "tmp_fpga_top/scatter_gather_top_3.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/amin/ThunderGP-modified"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Nov  8 12:08:37 2023",
+ "timestampMillis": "1699445317905",
+ "status": {
+  "cmdId": "092e6c53-2ce6-4fa8-86ee-3c7a519cfd65",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Nov  8 12:08:40 2023",
+ "timestampMillis": "1699445320560",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "readEdgesCU3",
+     "file": "/home/amin/ThunderGP-modified/xclbin_pr/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/amin/ThunderGP-modified/tmp_fpga_top/scatter_gather_top_3.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2022.2. SW Build 3671529 on 2022-10-13-17:52:11"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Nov  8 12:08:40 2023",
+ "timestampMillis": "1699445320562",
+ "buildStep": {
+  "cmdId": "59851f73-96d4-4619-8ced-85306b34885f",
+  "name": "vitis_hls",
+  "logFile": "/home/amin/ThunderGP-modified/_x/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/readEdgesCU3/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/amin/ThunderGP-modified/_x/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/readEdgesCU3/readEdgesCU3.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/amin/ThunderGP-modified/_x/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/readEdgesCU3/readEdgesCU3.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/amin/ThunderGP-modified"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Nov  8 12:08:40 2023",
+ "timestampMillis": "1699445320562",
+ "status": {
+  "cmdId": "59851f73-96d4-4619-8ced-85306b34885f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Nov  8 12:15:12 2023",
+ "timestampMillis": "1699445712457",
+ "status": {
+  "cmdId": "59851f73-96d4-4619-8ced-85306b34885f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Nov  8 12:15:12 2023",
+ "timestampMillis": "1699445712564",
+ "report": {
+  "path": "/home/amin/ThunderGP-modified/_x/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/readEdgesCU3/readEdgesCU3/solution/.autopilot/db/readEdgesCU3.design.xml",
+  "name": "readEdgesCU3",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Nov  8 12:15:12 2023",
+ "timestampMillis": "1699445712565",
+ "report": {
+  "path": "/home/amin/ThunderGP-modified/_x/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/readEdgesCU3/readEdgesCU3/solution/.autopilot/db/.message_syn.xml",
+  "name": "readEdgesCU3",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Nov  8 12:15:12 2023",
+ "timestampMillis": "1699445712565",
+ "report": {
+  "path": "/home/amin/ThunderGP-modified/_x/reports/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/hls_reports/readEdgesCU3_csynth.rpt",
+  "name": "readEdgesCU3",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Nov  8 12:15:12 2023",
+ "timestampMillis": "1699445712565",
+ "report": {
+  "path": "/home/amin/ThunderGP-modified/_x/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/readEdgesCU3/readEdgesCU3/solution/syn/report/readEdgesCU3_csynth.xml",
+  "name": "readEdgesCU3",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Nov  8 12:15:12 2023",
+ "timestampMillis": "1699445712632",
+ "report": {
+  "path": "/home/amin/ThunderGP-modified/_x/reports/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/system_estimate_readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Nov  8 12:15:13 2023",
+ "timestampMillis": "1699445713664",
+ "status": {
+  "cmdId": "092e6c53-2ce6-4fa8-86ee-3c7a519cfd65",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Nov  8 12:15:13 2023",
+ "timestampMillis": "1699445713744",
+ "report": {
+  "path": "/home/amin/ThunderGP-modified/_x/reports/readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/v++_compile_readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Nov  8 12:15:13 2023",
+ "timestampMillis": "1699445713744",
+ "report": {
+  "path": "/home/amin/ThunderGP-modified/_x/v++_compile_readEdgesCU3.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
